@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="contactList.css">
+    <link rel="icon" href="img/contact-list-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar"> 
+        <p id="Logo"></p>
+         <div id = "logout-container">
+            <p class="logout">Cerrar sesión</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="logout-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+              </svg>              
+         </div>    
+    </nav>
+    <main id="main-container">
+        <h1 id="main-title">Contactos</h1>
+        <form id="form">
+            <div class="form-name-input">
+                <input id="name-input" placeholder="Ingresar nombre y apellido" autocomplete="off">
+                <p class="info-text">-Cada nombre debe contener entre 2 a 16 letras. <br> -Debes comenzar el nombre y el apellido con letra mayuscula.  <br>-No uses simbolos ni números!</p>
+            </div>
+            <div class="form-phone-input">
+                <input id="phone-input" placeholder= "Ingresar número telefónico" autocomplete="off">
+                <p class="info-text">El número debe ser venezolano! ej: 04121234567</p>
+            </div>    
+            <button class="form-btn" disabled>Enviar</button>
+        </form>
+        <ul id="list"> 
+        </ul>
+    </main>    
+    <script src="contactList.js"></script>
+</body>
+</html>

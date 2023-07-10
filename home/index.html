@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/login.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+    <div class="notification"></div>
+        <h3 id="title">LISTA DE CONTACTOS</h3>
+        <div id="login-container">
+            <label class="label">Ingresar</label>
+            <form id="login-form" class="form">
+                <img src="img/user.png" alt="user-icon" class="icon">
+                <input type="text" name="login" id="login" placeholder="Ingresa tu usuario" autocomplete="off">
+                <button id="login-btn" >Entrar</button>
+            </form>
+            <label class="label">Registro</label>
+            <form id="register-form" class="form">
+                <img src="img/registro.png" alt="register-icon" class="icon">
+                <input type="text" name="register" id="register" placeholder="Crea tu usuario" autocomplete="off">
+                <button id="register-btn" >Registrar</button>
+            </form>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
